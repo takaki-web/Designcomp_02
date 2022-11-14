@@ -1,0 +1,15 @@
+@use "../foundation/import";
+@use "../mixin" as m;
+
+// indexページのfooterセクション
+.l-index-footer {
+  height: 80px;
+  background-color: import.$color-fv;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__site-title{
+    padding-left: 6px;
+  }
+}

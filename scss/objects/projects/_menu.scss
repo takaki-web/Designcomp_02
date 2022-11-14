@@ -1,0 +1,179 @@
+@use "../../foundation/import";
+@use "../../mixin" as m;
+// Base (Mobile First)
+
+// indexページのmenuセクション
+.p-index-menu {
+  padding-top: 91.5px;
+  background-color: import.$color-menu;
+  position: relative;
+  padding-bottom: 80px;
+  &::before {
+    content: "";
+    background: url(/img/svg/noise.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 100px; /* ノイズ画像の粗さを調節 */
+    opacity: 0.3;
+  }
+  &__wrapper {
+    background-color: import.$color-fv;
+    position: relative;
+    margin-top: 58px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 158px 158px 0 0;
+      border-color: import.$color-menu transparent transparent transparent;
+    }
+    &::after {
+      content: "";
+      background: url(/img/svg/noise.svg);
+      position: absolute;
+      top: 0;
+      width: 158px;
+      height: 158px;
+      background-size: 100px; /* ノイズ画像の粗さを調節 */
+      opacity: 0.3;
+      border-style: solid;
+      clip-path: polygon(100% 0, 0 0, 0 100%);
+    }
+  }
+  &__lists {
+    padding: 161px 22px 240px 23px;
+    .p-index-menu__list:first-child {
+      margin-top: 0;
+    }
+  }
+  &__list {
+    width: 300px;
+    height: 200px;
+    display: block;
+    background-color: import.$color-white;
+    margin-top: 80px;
+    box-shadow: 10px 10px 0px 0px import.$color-sdw,
+      0px 0px 0px 1px rgba(10, 10, 10, 0.02);
+    text-align: center;
+    padding-top: 21px;
+    svg {
+      height: 64px;
+    }
+  }
+  &__text1 {
+    padding-bottom: 27px;
+    font-family: "AvenirNext LT Pro";
+    font-weight: bold;
+  }
+  &__text2 {
+    padding-top: 28px;
+    font-family: "ヒラギノ角ゴ Pro W3";
+    font-weight: 600;
+    transform: translate(2px, 0);
+  }
+  &__triangle {
+    width: 158px;
+    height: 158px;
+    clip-path: polygon(99% 2%, 2% 99%, 99% 99%);
+    background-color: import.$color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    &-text-01 {
+      color: import.$color-base;
+      transform: translate(-14px, 32px);
+      &::before {
+        content: "";
+        position: absolute;
+        top: 47px;
+        right: 5px;
+        width: 50px;
+        height: 1px;
+        background: import.$color-base;
+        transition: all 0.3s;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 45px;
+        right: 3px;
+        width: 5px;
+        height: 1px;
+        background: import.$color-base;
+        transform: rotate(50deg);
+        transition: all 0.3s;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+      }
+    }
+    &-text-02 {
+      color: import.$color-base;
+      transform: translate(-18px, 34px);
+    }
+    &-wrapper {
+      clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+      background-color: import.$color-base;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+@include m.mq(pc) {
+  .p-index-menu {
+    .c-section__title {
+      transform: translate(-388px, 4px);
+      margin-bottom: 80.5px;
+    }
+    &__wrapper{
+      margin: 0 120px;
+      max-width: 1000px;
+      width: 69.444vw;
+      height: 800px;
+      margin-bottom: 122px;
+          /*アスペクト比の維持*/
+    aspect-ratio: 5/4;
+    }
+    &__lists {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 161px 0 0 0;
+      padding-left: unquote('min(8.333vw, 120px)'); //scssでmin()とmax()を使用する場合
+      .p-index-menu__list:nth-child(2){
+        margin-top: 0;
+        margin-left: unquote('min(11.111vw, 160px)'); //scssでmin()とmax()を使用する場合
+      }
+      .p-index-menu__list:nth-child(4){
+        margin-left: unquote('min(11.111vw, 160px)'); //scssでmin()とmax()を使用する場合
+      }
+    }
+    &__list{
+        width:calc(50% - 140px) ;
+    }
+    &__triangle {
+      &:hover{
+        background-color: import.$color-base;
+        .p-index-menu__triangle-text-01,.p-index-menu__triangle-text-02{
+          color: import.$color-white;
+          &::before {
+            background: import.$color-white;
+          }
+          &::after {
+            background: import.$color-white;
+          }
+      }
+    }
+    }
+  }
+}

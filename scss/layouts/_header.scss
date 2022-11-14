@@ -1,0 +1,176 @@
+@use "../foundation/import";
+@use "../mixin" as m;
+// Base (Mobile First)
+
+// indexページのheaderセクション
+.l-header {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  &__wrapper {
+    position: relative;
+    background-color: import.$color-header;
+    z-index: 3;
+    height: 62px;
+  }
+  &__site-title {
+    position: absolute;
+    top: 20px;
+    left: 6.933vw;
+    color: import.$color-base;
+    text-align: center;
+    letter-spacing: 0.1em;
+    &::before {
+      content: url("/img/svg/comphair.svg");
+      padding-right: 11px;
+      vertical-align: middle;
+    }
+  }
+  &__nav-lists {
+    display: none;
+  }
+  &__burger-btn {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 4vw;
+    width: 40px;
+    height: 62px;
+    cursor: pointer;
+  }
+  &__burger-btn span {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    left: 0px;
+    background-color: import.$color-base;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    transform: translate(9px, 6px);
+  }
+  &__burger-btn span:nth-child(1) {
+    top: 11px;
+  }
+  &__burger-btn span:nth-child(2) {
+    top: 23px;
+  }
+  &__burger-btn span:nth-child(3) {
+    top: 35px;
+  }
+  /* ナビ開いてる時のバツボタン */
+&__burger-btn.active span:nth-child(1) {
+  width: 36px;
+  top: 28px;
+  left: 3px;
+  background: import.$color-black;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+&__burger-btn.active span:nth-child(2),
+&__burger-btn.active span:nth-child(3) {
+  width: 36px;
+  top: 28px;
+  left: 1px;
+  background: import.$color-black;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* ナビメニュー内 */
+&__burger-menu {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  color: import.$color-black;
+  background: import.$color-fv;
+  text-align: center;
+  width: 100vw;
+  height: 100%;
+  padding-top: 245px;
+  opacity: 0;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+  visibility: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  font-size: 2.4rem;
+  letter-spacing: 0.1em;
+  &::before {
+    content: "";
+    background: url(/img/svg/noise.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 100px; /* ノイズ画像の粗さを調節 */
+    opacity: 0.3;
+  }
+}
+
+&__burger-menu ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+&__burger-menu-link {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  transition: 0.4s all;
+}
+&__burger-menu-link:last-child {
+  padding-bottom: 0;
+}
+
+&__burger-menu-link a {
+  display: block;
+  color: import.$color-black;
+  text-decoration: none;
+  padding: 0 0 46px 5px;
+}
+
+/* ハンバーガーメニュー押してactiveクラスを付いたら表示する */
+&__burger-menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+}
+
+
+@include m.mq(pc) {
+  // indexページのheaderセクション
+  .l-header {
+    &__burger-btn{
+      display: none;
+    }
+    &__site-title {
+      top: 29px;
+      left: 7.708vw;
+    }
+    &__wrapper{
+      display: flex;
+      flex-direction:row;
+      align-items: center;
+      justify-content:end;
+      gap: 1ch;
+      padding-right: 8.056vw;
+      height: 80px;
+    }
+    &__nav-lists{
+      display: block;
+      display: flex;
+    }
+    &__nav-item{
+      letter-spacing: 0.1em;
+      padding-left:17px;
+    }
+}
+}

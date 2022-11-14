@@ -1,0 +1,104 @@
+@use "../../foundation/import";
+@use "../../mixin" as m;
+// Base (Mobile First)
+
+// indexページのproductセクション
+.p-index-product {
+  padding-top: 91.5px;
+  .c-section__title{
+    transform: translate(1px,4px);
+  }
+  &__flex-item01{
+    padding-top: 4px;
+  }
+  &__flex-item02{
+    padding-top: 80px;
+  }
+  &__heading {
+    padding: 30px 0 40px 0;
+    text-align: center;
+    letter-spacing: 0.2em;
+    &-text01{
+      color: import.$color-base;
+      font-size: 2.4rem;
+      font-family: 'AvenirNext LT Pro';
+    }
+    &-text02{
+      font-family: "ヒラギノ角ゴ Pro W3";
+      padding-top: 3px;
+    }
+    &-text03{
+      padding-top: 20px;
+    }
+    &-span{
+      padding-left: 5px;
+    }
+  }
+  &__text{
+    padding: 3px 8px 0 8px;
+    line-height: 21.86px;
+    &-span01{
+      padding-left: 3px;
+    }
+    &-br--tab{
+      display: none;
+    }
+  }
+}
+
+@include m.mq(pc) {
+  .p-index-product{
+    .c-section__title {
+      transform: translate(365px, 5px);
+      margin-bottom: 77.5px;
+    }
+    &__wrapper{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__flex-item01{
+      display: flex;
+      flex-direction: row-reverse;
+      max-width: 1000px;
+      img{
+        width: 100%;
+      }
+    }
+    &__flex-item02{
+      padding-top: 120px;
+      display: flex;
+      max-width: 1000px;
+      img{
+        width: 100%;
+      }
+
+    }
+
+    &__content{
+      max-width: 380px;
+    }
+    &__heading {
+      padding: 80px 0 40px 25px;
+      text-align: start;
+      letter-spacing: 0.2em;
+    }
+    &__text{
+      padding: 2px 34px 0 25px;
+      line-height: 21.86px;
+      &-span01{
+        padding-left: 2px;
+        &--tab{
+          padding-left: 0;
+        }
+      }
+      &-br--tab{
+        display: block;
+      }
+    }
+    .c-button{
+      margin-left: 24px;
+    }
+  }
+}
