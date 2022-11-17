@@ -10,7 +10,7 @@
   padding-bottom: 80px;
   &::before {
     content: "";
-    background: url(/img/svg/noise.svg);
+    background: url(/img/component/noise.svg);
     position: absolute;
     top: 0;
     left: 0;
@@ -36,7 +36,7 @@
     }
     &::after {
       content: "";
-      background: url(/img/svg/noise.svg);
+      background: url(/img/component/noise.svg);
       position: absolute;
       top: 0;
       width: 158px;

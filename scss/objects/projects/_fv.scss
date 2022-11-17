@@ -9,7 +9,7 @@
     background: import.$color-fv;
     &::before {
       content: "";
-      background: url(/img/svg/noise.svg);
+      background: url(/img/component/noise.svg);
       position: absolute;
       top: 0;
       left: 0;
@@ -52,6 +52,7 @@
     padding: 8px 0;
     align-items: center;
     justify-content: center;
+    z-index: 1;
   }
   &__card {
     height: 64px;
@@ -68,7 +69,7 @@
     }
     &::after {
       padding: 3px 0 0 35px;
-      content: url(/img/svg/line.svg);
+      content: url(/img/component/line.svg);
     }
   }
   &__card-right {
@@ -78,7 +79,7 @@
     }
     &::after {
       padding: 3px 0 0 30px;
-      content: url(/img/svg/instagram.svg);
+      content: url(/img/component/instagram.svg);
     }
   }
 }
@@ -132,11 +133,11 @@
       }
       &::before {
         padding: 4px 0 0 44px;
-        content: url(/img/svg/line.svg);
+        content: url(/img/component/line.svg);
       }
       &:hover{
         &::before{
-          content: url(/img/svg/line_hover.svg);
+          content: url(/img/component/line_hover.svg);
           transform: rotate(90deg);
           padding: 0px 0px 80px 0px;
         }
@@ -147,7 +148,7 @@
       &::after {
         display: none;
         padding: 3px 0 0 35px;
-        content: url(/img/svg/line.svg);
+        content: url(/img/component/line.svg);
       }
       &-wrapper{
         position: absolute;
@@ -162,11 +163,11 @@
       }
       &::after {
         padding: 3px 0 0 56px;
-        content: url(/img/svg/instagram.svg);
+        content: url(/img/component/instagram.svg);
       }
       &:hover{
         &::after{
-          content: url(/img/svg/instagram_hover.svg);
+          content: url(/img/component/instagram_hover.svg);
           transform: rotate(270deg);
           padding: 120px 0px 0px 0px;
         }
