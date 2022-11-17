@@ -28,3 +28,14 @@ table {
   border-collapse: separate;
   border-spacing: 1px;
 }
+.visible-pc {
+  display: none;
+}
+@include m.mq(pc) {
+  .visible-pc {
+    display: block;
+  }
+  .visible-sp {
+    display: none;
+  }
+}
