@@ -32,6 +32,18 @@ table {
   border-spacing: 1px;
 }
 
+.visible-pc {
+  display: none;
+}
+
+@media screen and (min-width: 1009px) {
+  .visible-pc {
+    display: block;
+  }
+  .visible-sp {
+    display: none;
+  }
+}
 .l-header {
   width: 100%;
   position: fixed;
@@ -55,7 +67,7 @@ table {
   letter-spacing: 0.1em;
 }
 .l-header__site-title::before {
-  content: url("/img/svg/comphair.svg");
+  content: url("/img/component/capello.svg");
   padding-right: 11px;
   vertical-align: middle;
 }
@@ -131,7 +143,7 @@ table {
 }
 .l-header__burger-menu::before {
   content: "";
-  background: url(/img/svg/noise.svg);
+  background: url(/img/component/noise.svg);
   position: absolute;
   top: 0;
   left: 0;
@@ -190,7 +202,10 @@ table {
   }
   .l-header__nav-item {
     letter-spacing: 0.1em;
-    padding-left: 17px;
+    margin-left: 17px;
+  }
+  .l-header__nav-item:hover {
+    border-bottom: 1px solid #FE929F;
   }
 }
 .l-index-footer {
@@ -293,7 +308,7 @@ table {
 }
 .p-index-fv__wrapper::before {
   content: "";
-  background: url(/img/svg/noise.svg);
+  background: url(/img/component/noise.svg);
   position: absolute;
   top: 0;
   left: 0;
@@ -335,6 +350,7 @@ table {
   padding: 8px 0;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 .p-index-fv__card {
   height: 64px;
@@ -350,7 +366,7 @@ table {
 }
 .p-index-fv__card-left::after {
   padding: 3px 0 0 35px;
-  content: url(/img/svg/line.svg);
+  content: url(/img/component/line.svg);
 }
 .p-index-fv__card-right {
   margin-left: 25px;
@@ -360,7 +376,7 @@ table {
 }
 .p-index-fv__card-right::after {
   padding: 3px 0 0 30px;
-  content: url(/img/svg/instagram.svg);
+  content: url(/img/component/instagram.svg);
 }
 
 @media screen and (min-width: 1009px) {
@@ -409,10 +425,10 @@ table {
   }
   .p-index-fv__card-left::before {
     padding: 4px 0 0 44px;
-    content: url(/img/svg/line.svg);
+    content: url(/img/component/line.svg);
   }
   .p-index-fv__card-left:hover::before {
-    content: url(/img/svg/line_hover.svg);
+    content: url(/img/component/line_hover.svg);
     transform: rotate(90deg);
     padding: 0px 0px 80px 0px;
   }
@@ -422,7 +438,7 @@ table {
   .p-index-fv__card-left::after {
     display: none;
     padding: 3px 0 0 35px;
-    content: url(/img/svg/line.svg);
+    content: url(/img/component/line.svg);
   }
   .p-index-fv__card-left-wrapper {
     position: absolute;
@@ -437,10 +453,10 @@ table {
   }
   .p-index-fv__card-right::after {
     padding: 3px 0 0 56px;
-    content: url(/img/svg/instagram.svg);
+    content: url(/img/component/instagram.svg);
   }
   .p-index-fv__card-right:hover::after {
-    content: url(/img/svg/instagram_hover.svg);
+    content: url(/img/component/instagram_hover.svg);
     transform: rotate(270deg);
     padding: 120px 0px 0px 0px;
   }
@@ -511,7 +527,7 @@ table {
 }
 .p-index-menu::before {
   content: "";
-  background: url(/img/svg/noise.svg);
+  background: url(/img/component/noise.svg);
   position: absolute;
   top: 0;
   left: 0;
@@ -538,7 +554,7 @@ table {
 }
 .p-index-menu__wrapper::after {
   content: "";
-  background: url(/img/svg/noise.svg);
+  background: url(/img/component/noise.svg);
   position: absolute;
   top: 0;
   width: 158px;
@@ -782,7 +798,7 @@ table {
   letter-spacing: 0.1em;
 }
 .p-index-access__heading::before {
-  content: url("/img/svg/comphair.svg");
+  content: url("/img/component/capello.svg");
   padding-right: 11px;
   vertical-align: middle;
 }

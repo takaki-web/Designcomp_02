@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+  <head prefix="og:http://ogp.me/ns#">
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--検索エンジンの対象外にする-->
+    <meta name="robots" content="noindex,nofollow" />
     <!-- サイトのタイトル -->
-    <title>comphair</title>
+    <title>capello</title>
     <!-- サイトの説明文 -->
-    <meta name="description" content="comphair" />
-    <!-- サイト制作者 -->
-    <meta name="author" content="@takakiweb" />
-    <!-- サイトのURL -->
-    <link rel="canonical" href="https://" />
-    <!-- サイトのURL -->
-    <meta property="og:url" content="https://" />
-    <!-- サイトタイトル -->
-    <meta property="og:title" content="comphair" />
+    <meta
+      name="description"
+      content="Hair makes life fun."
+    />
+    <!-- ページのタイトル -->
+    <meta property="og:title" content="capello" />
+    <!-- ページの説明文 -->
+    <meta
+      property="og:description"
+      content="Hair makes life fun."
+    />
+    <!-- ページのURL -->
+    <meta property="og:url" content="本番環境の絶対パスを入れる" />
+    <!-- サムネイル画像のURL 1200*630-->
+    <meta property="og:image" content="/img/thumbnail.png" />
+    <!-- サイトの名前 -->
+    <meta property="og:site_name" content="capello" />
     <!-- サイトの種類 -->
     <meta property="og:type" content="website" />
-    <!-- サイト説明文 -->
-    <meta property="og:description" content="comphair" />
-    <!-- サイトを共有した際に表示される画像URL -->
-    <meta property="og:image" content="" />
-    <!-- Twitterで表示させたときの見え方 -->
-    <meta name="twitter:card" content="large" />
-    <!-- Twitterのユーザー名 -->
-    <meta name="twitter:site" content="@takakiweb" />
-    <meta property="og:site_name" content="comphair" />
     <!-- サイトの言語情報 -->
     <meta property="og:locale" content="ja_JP" />
-    <!-- サイトのアイコン -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <!-- fontawesome -->
+    <!-- レガシーブラウザ用のfavicon.ico 32×32-->
+    <link rel="icon" href="/img/favicon.ico" sizes="any" />
+    <!-- モダンブラウザ用のSVGアイコン（ライト・ダーク） -->
+    <link rel="icon" href="/img/icon.svg" type="image/svg+xml" />
+    <!-- Appleデバイス用の180×180のPNGアイコン -->
     <link
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      rel="stylesheet"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/apple-touch-icon.png"
     />
-    <!-- reset.css destyle -->
+    <!-- Androidデバイス用の192×192と512×512のPNGアイコンを含むWebアプリマニフェスト -->
+    <link rel="manifest" href="/img/webmanifest.json" />
+    <!-- reset.css リセットstyle -->
     <link rel="stylesheet" href="/css/destyle.css" />
     <!-- commoncss読み込み-->
     <link rel="stylesheet" href="/css/common.css" />
@@ -46,24 +51,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>comphair</title>
   </head>
   <body>
     <!-- l-header -->
     <header class="l-header js-l-header">
       <div class="l-header__wrapper">
-        <h1 class="l-header__site-title">comphair</h1>
+        <h1 class="l-header__site-title">capello</h1>
         <!-- /.l-header__site-title -->
         <ul class="l-header__nav-lists">
-          <li class="l-header__nav-item"><a href="">HOME</a></li>
+          <li class="l-header__nav-item"><a href="#">HOME</a></li>
           <!-- /.l-header__nav-item -->
-          <li class="l-header__nav-item"><a href="">CONCEPT</a></li>
+          <li class="l-header__nav-item"><a href="#concept">CONCEPT</a></li>
           <!-- /.l-header__nav-item -->
-          <li class="l-header__nav-item"><a href="">MENU</a></li>
+          <li class="l-header__nav-item"><a href="#menu">MENU</a></li>
           <!-- /.l-header__nav-item -->
-          <li class="l-header__nav-item"><a href="">PRODUCT</a></li>
+          <li class="l-header__nav-item"><a href="#product">PRODUCT</a></li>
           <!-- /.l-header__nav-item -->
-          <li class="l-header__nav-item"><a href="">ACCESS</a></li>
+          <li class="l-header__nav-item"><a href="#access">ACCESS</a></li>
           <!-- /.l-header__nav-item -->
         </ul>
         <!-- /.l-header__nav-lists -->
@@ -79,16 +83,16 @@
               <a href="#">HOME</a>
             </li>
             <li class="l-header__burger-menu-link">
-              <a href="#">CONCEPT</a>
+              <a href="#concept">CONCEPT</a>
             </li>
             <li class="l-header__burger-menu-link">
-              <a href="#">MENU</a>
+              <a href="#menu">MENU</a>
             </li>
             <li class="l-header__burger-menu-link">
-              <a href="#">PRODUCT</a>
+              <a href="#product">PRODUCT</a>
             </li>
             <li class="l-header__burger-menu-link">
-              <a href="#">ACCESS</a>
+              <a href="#access">ACCESS</a>
             </li>
           </ul>
         </nav>
@@ -107,16 +111,16 @@
               <source
                 media="(min-width:1009px)"
                 srcset="
-                  /img/pc/fv-pc.jpg    1x,
-                  /img/pc/fv-pc@2x.jpg 2x
+                  /img/pc/fv-pc.webp    1x,
+                  /img/pc/fv-pc@2x.webp 2x
                 "
               />
               <img
                 loading="lazy"
-                src="img/sp/fv-sp.jpg"
+                src="img/sp/fv-sp.webp"
                 srcset="
-                  /img/sp/fv-sp.jpg    1x,
-                  /img/sp/fv-sp@2x.jpg 2x
+                  /img/sp/fv-sp.webp    1x,
+                  /img/sp/fv-sp@2x.webp 2x
                 "
                 alt="fv"
               />
@@ -153,7 +157,7 @@
       </div>
       <!-- p-index-fv -->
       <!-- p-index-concept -->
-      <section class="p-index-concept">
+      <section class="p-index-concept" id="concept">
         <div class="c-inner">
           <h2 class="c-title">CONCEPT</h2>
           <div class="p-index-concept__wrapper">
@@ -182,16 +186,16 @@
                 <source
                   media="(min-width:1009px)"
                   srcset="
-                    /img/pc/concept-pc.jpg    1x,
-                    /img/pc/concept-pc@2x.jpg 2x
+                    /img/pc/concept-pc.webp    1x,
+                    /img/pc/concept-pc@2x.webp 2x
                   "
                 />
                 <img
                   loading="lazy"
-                  src="img/sp/concept-sp.jpg"
+                  src="img/sp/concept-sp.webp"
                   srcset="
-                    /img/sp/concept-sp.jpg    1x,
-                    /img/sp/concept-sp@2x.jpg 2x
+                    /img/sp/concept-sp.webp    1x,
+                    /img/sp/concept-sp@2x.webp 2x
                   "
                   alt="concept"
                 />
@@ -205,7 +209,7 @@
       <!-- p-index-concept -->
 
       <!-- p-index-menu -->
-      <section class="p-index-menu">
+      <section class="p-index-menu" id="menu">
         <div class="c-inner">
           <h2 class="c-title">MENU</h2>
           <div class="p-index-menu__wrapper">
@@ -335,7 +339,7 @@
       <!-- p-index-menu -->
 
       <!-- p-index-product -->
-      <section class="p-index-product">
+      <section class="p-index-product" id="product">
         <div class="c-inner">
           <h2 class="c-title">PRODUCT</h2>
           <div class="p-index-product__wrapper">
@@ -345,16 +349,16 @@
                   <source
                     media="(min-width:1009px)"
                     srcset="
-                      /img/pc/treatment-pc.jpg    1x,
-                      /img/pc/treatment-pc@2x.jpg 2x
+                      /img/pc/treatment-pc.webp    1x,
+                      /img/pc/treatment-pc@2x.webp 2x
                     "
                   />
                   <img
                     loading="lazy"
-                    src="img/sp/treatment-sp.jpg"
+                    src="img/sp/treatment-sp.webp"
                     srcset="
-                      /img/sp/treatment-sp.jpg    1x,
-                      /img/sp/treatment-sp@2x.jpg 2x
+                      /img/sp/treatment-sp.webp    1x,
+                      /img/sp/treatment-sp@2x.webp 2x
                     "
                     alt="treatment"
                   />
@@ -399,16 +403,16 @@
                   <source
                     media="(min-width:1009px)"
                     srcset="
-                      /img/pc/wax-pc.jpg    1x,
-                      /img/pc/wax-pc@2x.jpg 2x
+                      /img/pc/wax-pc.webp    1x,
+                      /img/pc/wax-pc@2x.webp 2x
                     "
                   />
                   <img
                     loading="lazy"
-                    src="img/sp/wax-sp.jpg"
+                    src="img/sp/wax-sp.webp"
                     srcset="
-                      /img/sp/wax-sp.jpg    1x,
-                      /img/sp/wax-sp@2x.jpg 2x
+                      /img/sp/wax-sp.webp    1x,
+                      /img/sp/wax-sp@2x.webp 2x
                     "
                     alt="wax"
                   />
@@ -453,34 +457,18 @@
       <!-- p-index-product -->
 
       <!-- p-index-access -->
-      <section class="p-index-access">
+      <section class="p-index-access" id="access">
         <div class="c-inner">
           <h2 class="c-title">ACCESS</h2>
           <div class="p-index-access__wrapper">
             <div class="p-index-access__flex-item01">
-              <picture>
-                <source
-                  media="(min-width:1009px)"
-                  srcset="
-                    /img/pc/map-pc.jpg    1x,
-                    /img/pc/map-pc@2x.jpg 2x
-                  "
-                />
-                <img
-                  loading="lazy"
-                  src="img/sp/map-sp.jpg"
-                  srcset="
-                    /img/sp/map-sp.jpg    1x,
-                    /img/sp/map-sp@2x.jpg 2x
-                  "
-                  alt="map"
-                />
-              </picture>
+              <iframe class="visible-pc" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3952.514989961989!2d130.37649752816287!3d33.58828799291395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1668694961801!5m2!1sja!2sjp" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe class="visible-sp" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3952.514989961989!2d130.37649752816287!3d33.58828799291395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1668694961801!5m2!1sja!2sjp" width="345" height="345" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <!-- /.p-index-access__flex-item01 -->
             <div class="p-index-access__flex-item02">
               <div class="p-index-access__content">
-                <h3 class="p-index-access__heading">comphair</h3>
+                <h3 class="p-index-access__heading">capello</h3>
                 <!-- /.p-index-access__heading -->
                 <p class="p-index-access__text">
                   2972 Westheimer Rd. Santa Ana, Ill<span
@@ -534,16 +522,16 @@
                     <source
                       media="(min-width:1009px)"
                       srcset="
-                        /img/pc/barber-pc.jpg    1x,
-                        /img/pc/barber-pc@2x.jpg 2x
+                        /img/pc/barber-pc.webp    1x,
+                        /img/pc/barber-pc@2x.webp 2x
                       "
                     />
                     <img
                       loading="lazy"
-                      src="img/sp/barber-sp.jpg"
+                      src="img/sp/barber-sp.webp"
                       srcset="
-                        /img/sp/barber-sp.jpg    1x,
-                        /img/sp/barber-sp@2x.jpg 2x
+                        /img/sp/barber-sp.webp    1x,
+                        /img/sp/barber-sp@2x.webp 2x
                       "
                       alt="barber"
                     />
