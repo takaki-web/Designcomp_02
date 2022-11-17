@@ -9,11 +9,11 @@
   margin: 0 auto;
 }
 
-  @include m.mq(pc) {
-    .c-inner {
-      width: 86.111vw;
-      max-width: 1240px;
-      padding: 0;
-      margin: 0 auto;
-    }
+@include m.mq(pc) {
+  .c-inner {
+    width: 86.111vw;
+    max-width: 1240px;
+    padding: 0;
+    margin: 0 auto;
   }
+}

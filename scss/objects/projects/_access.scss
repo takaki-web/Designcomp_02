@@ -3,15 +3,15 @@
 // Base (Mobile First)
 
 // indexページのproductセクション
-.p-index-access{
+.p-index-access {
   padding-top: 131px;
-  &__wrapper{
+  &__wrapper {
     padding-top: 4px;
   }
-  &__flex-item01{
+  &__flex-item01 {
     padding-bottom: 50px;
   }
-  &__heading{
+  &__heading {
     padding-left: 3vw;
     color: import.$color-base;
     letter-spacing: 0.1em;
@@ -21,32 +21,32 @@
       vertical-align: middle;
     }
   }
-  &__text{
+  &__text {
     font-size: 1.2rem;
     letter-spacing: 0.1em;
     padding: 8px 0 34px 3vw;
-    &-span01{
+    &-span01 {
       letter-spacing: 0;
     }
-    &-span02{
+    &-span02 {
       padding-left: 2px;
     }
   }
-  &__table{
+  &__table {
     font-size: 1.2rem;
     height: 136px;
     border-top: 1px dashed import.$color-sdw;
     font-family: "ヒラギノ角ゴ Pro W3";
-    &-tr01{
+    &-tr01 {
       height: 80px;
     }
-    &-tr02{
+    &-tr02 {
       height: 56px;
     }
-    &-text01{
-      transform: translate(-8px,0px);
+    &-text01 {
+      transform: translate(-8px, 0px);
       font-weight: 300;
-      &::after{
+      &::after {
         content: "";
         width: 64px;
         height: 1px;
@@ -57,13 +57,13 @@
         right: -40px;
       }
     }
-    &-text03{
+    &-text03 {
       padding-top: 20px;
     }
-    &-text04{
-      transform: translate(-15px,0px);
+    &-text04 {
+      transform: translate(-15px, 0px);
       font-weight: 300;
-      &::after{
+      &::after {
         content: "";
         width: 40px;
         height: 1px;
@@ -74,83 +74,83 @@
         right: -35px;
       }
     }
-    &-text05{
-      transform: translate(-79px,0px);
+    &-text05 {
+      transform: translate(-79px, 0px);
       font-weight: 300;
     }
-    &-span01{
+    &-span01 {
       letter-spacing: 0.1em;
     }
-    &-span02{
+    &-span02 {
       padding-left: 16px;
       letter-spacing: 0.1em;
     }
-    &-span03{
+    &-span03 {
       padding-left: 33px;
       letter-spacing: 0.1em;
     }
-    td{
+    td {
       border-bottom: 1px dashed import.$color-sdw;
       width: 251px;
       vertical-align: middle;
       text-align: center;
     }
-    th{
+    th {
       border-bottom: 1px dashed import.$color-sdw;
       width: 94px;
       vertical-align: middle;
       text-align: center;
     }
   }
-  &__img-wrapper{
+  &__img-wrapper {
     padding: 37px 0 80px 0;
   }
 }
 
 @include m.mq(pc) {
-  .p-index-access{
+  .p-index-access {
     padding-top: 171px;
-    .c-section__title{
+    .c-section__title {
       margin-bottom: 81px;
     }
-    &__wrapper{
+    &__wrapper {
       display: flex;
       flex-direction: row-reverse;
       max-width: 1000px;
       margin: 0 auto;
       padding: 0;
     }
-    &__flex-item01{
+    &__flex-item01 {
       width: 50%;
-      img{
+      img {
         width: 100%;
       }
     }
-    &__flex-item02{
+    &__flex-item02 {
       width: 50%;
       padding-top: 9px;
-      img{
+      img {
         max-width: 400px;
         width: 100%;
       }
     }
-    &__heading{
+    &__heading {
       padding-left: 0.7vw;
     }
-    &__text{
+    &__text {
       font-size: 1.2rem;
       letter-spacing: 0.1em;
       padding: 8px 0 34px 0.7vw;
     }
-    &__table{
-      &-text02{
-        transform: translate(-2px,0px);
+    &__table {
+      &-text02 {
+        transform: translate(-2px, 0px);
       }
-      &-text03{
-        transform: translate(-2px,1px);
+      &-text03 {
+        transform: translate(-2px, 1px);
       }
     }
-    &__img-wrapper{
+    &__img-wrapper {
       padding: 45px 0 80px 0;
     }
   }

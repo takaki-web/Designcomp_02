@@ -62,7 +62,7 @@ table {
   position: absolute;
   top: 20px;
   left: 6.933vw;
-  color: #FE929F;
+  color: #fe929f;
   text-align: center;
   letter-spacing: 0.1em;
 }
@@ -89,7 +89,7 @@ table {
   width: 24px;
   height: 2px;
   left: 0px;
-  background-color: #FE929F;
+  background-color: #fe929f;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -128,7 +128,7 @@ table {
   top: 0;
   left: 0;
   color: #333333;
-  background: #FFF0FA;
+  background: #fff0fa;
   text-align: center;
   width: 100vw;
   height: 100%;
@@ -205,12 +205,12 @@ table {
     margin-left: 17px;
   }
   .l-header__nav-item:hover {
-    border-bottom: 1px solid #FE929F;
+    border-bottom: 1px solid #fe929f;
   }
 }
 .l-index-footer {
   height: 80px;
-  background-color: #FFF0FA;
+  background-color: #fff0fa;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -274,7 +274,7 @@ table {
   height: 32px;
   font-weight: 300;
   border-radius: 20px;
-  background-color: #FE929F;
+  background-color: #fe929f;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -287,8 +287,8 @@ table {
 }
 .c-button:hover {
   background-color: #fff;
-  color: #FE929F;
-  border: 1px solid #FE929F;
+  color: #fe929f;
+  border: 1px solid #fe929f;
 }
 
 @media screen and (min-width: 1009px) {
@@ -304,7 +304,7 @@ table {
 }
 .p-index-fv__wrapper {
   padding: 110px 0 30.4px 0;
-  background: #FFF0FA;
+  background: #fff0fa;
 }
 .p-index-fv__wrapper::before {
   content: "";
@@ -346,7 +346,7 @@ table {
 .p-index-fv__card-wrapper {
   display: flex;
   width: 100%;
-  background-color: #FFF0FA;
+  background-color: #fff0fa;
   padding: 8px 0;
   align-items: center;
   justify-content: center;
@@ -414,7 +414,7 @@ table {
     margin: 0;
   }
   .p-index-fv__card:hover {
-    background-color: #FE929F;
+    background-color: #fe929f;
     color: #fff;
   }
   .p-index-fv__card-left {
@@ -521,7 +521,7 @@ table {
 }
 .p-index-menu {
   padding-top: 91.5px;
-  background-color: #F9F3F1;
+  background-color: #f9f3f1;
   position: relative;
   padding-bottom: 80px;
 }
@@ -539,7 +539,7 @@ table {
   opacity: 0.3;
 }
 .p-index-menu__wrapper {
-  background-color: #FFF0FA;
+  background-color: #fff0fa;
   position: relative;
   margin-top: 58px;
 }
@@ -550,7 +550,7 @@ table {
   height: 0;
   border-style: solid;
   border-width: 158px 158px 0 0;
-  border-color: #F9F3F1 transparent transparent transparent;
+  border-color: #f9f3f1 transparent transparent transparent;
 }
 .p-index-menu__wrapper::after {
   content: "";
@@ -576,7 +576,7 @@ table {
   display: block;
   background-color: #fff;
   margin-top: 80px;
-  box-shadow: 10px 10px 0px 0px #9EDAE3, 0px 0px 0px 1px rgba(10, 10, 10, 0.02);
+  box-shadow: 10px 10px 0px 0px #9edae3, 0px 0px 0px 1px rgba(10, 10, 10, 0.02);
   text-align: center;
   padding-top: 21px;
 }
@@ -605,7 +605,7 @@ table {
   justify-content: center;
 }
 .p-index-menu__triangle-text-01 {
-  color: #FE929F;
+  color: #fe929f;
   transform: translate(-14px, 32px);
 }
 .p-index-menu__triangle-text-01::before {
@@ -615,7 +615,7 @@ table {
   right: 5px;
   width: 50px;
   height: 1px;
-  background: #FE929F;
+  background: #fe929f;
   transition: all 0.3s;
 }
 .p-index-menu__triangle-text-01::after {
@@ -625,7 +625,7 @@ table {
   right: 3px;
   width: 5px;
   height: 1px;
-  background: #FE929F;
+  background: #fe929f;
   transform: rotate(50deg);
   transition: all 0.3s;
   transition-property: all;
@@ -634,12 +634,12 @@ table {
   transition-delay: 0s;
 }
 .p-index-menu__triangle-text-02 {
-  color: #FE929F;
+  color: #fe929f;
   transform: translate(-18px, 34px);
 }
 .p-index-menu__triangle-wrapper {
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-  background-color: #FE929F;
+  background-color: #fe929f;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -676,15 +676,18 @@ table {
     width: calc(50% - 140px);
   }
   .p-index-menu__triangle:hover {
-    background-color: #FE929F;
+    background-color: #fe929f;
   }
-  .p-index-menu__triangle:hover .p-index-menu__triangle-text-01, .p-index-menu__triangle:hover .p-index-menu__triangle-text-02 {
+  .p-index-menu__triangle:hover .p-index-menu__triangle-text-01,
+.p-index-menu__triangle:hover .p-index-menu__triangle-text-02 {
     color: #fff;
   }
-  .p-index-menu__triangle:hover .p-index-menu__triangle-text-01::before, .p-index-menu__triangle:hover .p-index-menu__triangle-text-02::before {
+  .p-index-menu__triangle:hover .p-index-menu__triangle-text-01::before,
+.p-index-menu__triangle:hover .p-index-menu__triangle-text-02::before {
     background: #fff;
   }
-  .p-index-menu__triangle:hover .p-index-menu__triangle-text-01::after, .p-index-menu__triangle:hover .p-index-menu__triangle-text-02::after {
+  .p-index-menu__triangle:hover .p-index-menu__triangle-text-01::after,
+.p-index-menu__triangle:hover .p-index-menu__triangle-text-02::after {
     background: #fff;
   }
 }
@@ -706,7 +709,7 @@ table {
   letter-spacing: 0.2em;
 }
 .p-index-product__heading-text01 {
-  color: #FE929F;
+  color: #fe929f;
   font-size: 2.4rem;
   font-family: "AvenirNext LT Pro";
 }
@@ -794,7 +797,7 @@ table {
 }
 .p-index-access__heading {
   padding-left: 3vw;
-  color: #FE929F;
+  color: #fe929f;
   letter-spacing: 0.1em;
 }
 .p-index-access__heading::before {
@@ -816,7 +819,7 @@ table {
 .p-index-access__table {
   font-size: 1.2rem;
   height: 136px;
-  border-top: 1px dashed #9EDAE3;
+  border-top: 1px dashed #9edae3;
   font-family: "ヒラギノ角ゴ Pro W3";
 }
 .p-index-access__table-tr01 {
@@ -833,7 +836,7 @@ table {
   content: "";
   width: 64px;
   height: 1px;
-  border-top: 1px dashed #9EDAE3;
+  border-top: 1px dashed #9edae3;
   position: absolute;
   transform: rotate(90deg);
   margin-top: 8px;
@@ -850,7 +853,7 @@ table {
   content: "";
   width: 40px;
   height: 1px;
-  border-top: 1px dashed #9EDAE3;
+  border-top: 1px dashed #9edae3;
   position: absolute;
   transform: rotate(90deg);
   margin-top: 8px;
@@ -872,13 +875,13 @@ table {
   letter-spacing: 0.1em;
 }
 .p-index-access__table td {
-  border-bottom: 1px dashed #9EDAE3;
+  border-bottom: 1px dashed #9edae3;
   width: 251px;
   vertical-align: middle;
   text-align: center;
 }
 .p-index-access__table th {
-  border-bottom: 1px dashed #9EDAE3;
+  border-bottom: 1px dashed #9edae3;
   width: 94px;
   vertical-align: middle;
   text-align: center;
