@@ -28,6 +28,10 @@ table {
   border-collapse: separate;
   border-spacing: 1px;
 }
+body.fixed {
+  height: 100%;
+  overflow: hidden;
+}
 .visible-pc {
   display: none;
 }
