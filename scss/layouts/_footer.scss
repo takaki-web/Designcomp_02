@@ -2,7 +2,7 @@
 @use "../mixin" as m;
 
 // indexページのfooterセクション
-.l-index-footer {
+.l-footer {
   height: 80px;
   background-color: import.$color-fv;
   display: flex;
