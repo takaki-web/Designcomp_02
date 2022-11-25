@@ -32,6 +32,11 @@ table {
   border-spacing: 1px;
 }
 
+body.fixed {
+  height: 100%;
+  overflow: hidden;
+}
+
 .visible-pc {
   display: none;
 }
@@ -173,6 +178,7 @@ table {
   color: #333333;
   text-decoration: none;
   padding: 0 0 46px 5px;
+  position: relative;
 }
 .l-header__burger-menu.active {
   opacity: 1;
@@ -208,7 +214,7 @@ table {
     border-bottom: 1px solid #fe929f;
   }
 }
-.l-index-footer {
+.l-footer {
   height: 80px;
   background-color: #fff0fa;
   display: flex;
@@ -216,7 +222,7 @@ table {
   align-items: center;
   justify-content: center;
 }
-.l-index-footer__site-title {
+.l-footer__site-title {
   padding-left: 6px;
 }
 
