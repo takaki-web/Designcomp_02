@@ -21,7 +21,7 @@
       opacity: 0.3;
     }
   }
-  &__img-wrapper {
+  &__content-wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -93,7 +93,7 @@
         height: 800px;
       }
     }
-    &__img-wrapper {
+    &__content-wrapper {
       img {
         width: 100%;
       }

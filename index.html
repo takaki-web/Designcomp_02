@@ -98,19 +98,26 @@
       <!-- p-index-fv -->
       <div class="p-index-fv">
         <div class="p-index-fv__wrapper">
-          <div class="p-index-fv__img-wrapper">
-            <picture>
-              <source
-                media="(min-width:1009px)"
-                srcset="/img/pc/fv-pc.webp 1x, /img/pc/fv-pc@2x.webp 2x"
-              />
-              <img
-                loading="lazy"
-                src="img/sp/fv-sp.webp"
-                srcset="/img/sp/fv-sp.webp 1x, /img/sp/fv-sp@2x.webp 2x"
-                alt="fv"
-              />
+          <div class="p-index-fv__content-wrapper">
+            <picture class='p-index-fv__img-wrapper'>
+            <source
+            type='image/webp'
+            media='(min-width:1009px)'
+            srcset='/img/pc/fv-pc.webp 1x,/img/pc/fv-pc@2x.webp 2x'
+            width='1000' height='500'
+            />
+            <source
+            type='image/webp'
+            srcset='/img/sp/fv-sp.webp 1x,/img/sp/fv-sp@2x.webp 2x'
+            width='375' height='500'
+            />
+            <img
+            src=img/sp/fv-sp.webp
+            alt='fv'
+            width='375' height='500'
+            />
             </picture>
+            <!-- /p-index-fv__img-wrapper -->
             <svg>
               <text class="p-index-fv__text" x="50%" y="50">
                 Hair makes life fun.
@@ -118,7 +125,7 @@
               <!-- /.p-index-fv__text -->
             </svg>
           </div>
-          <!-- /.p-index-fv__img-wrapper -->
+          <!-- /.p-index-fv__content-wrapper -->
         </div>
         <div class="p-index-fv__card-wrapper">
           <div class="p-index-fv__card-left-wrapper">
@@ -168,24 +175,25 @@
             </div>
             <!-- /.p-index-concept__flex-item01 -->
             <div class="p-index-concept__flex-item02">
-              <picture>
+              <picture class='p-index-concept__img-wrapper'>
                 <source
-                  media="(min-width:1009px)"
-                  srcset="
-                    /img/pc/concept-pc.webp    1x,
-                    /img/pc/concept-pc@2x.webp 2x
-                  "
+                type='image/webp'
+                media='(min-width:1009px)'
+                srcset='/img/pc/concept-pc.webp 1x,/img/pc/concept-pc@2x.webp 2x'
+                width='500' height='375'
+                />
+                <source
+                type='image/webp'
+                srcset='/img/sp/concept-sp.webp 1x,/img/sp/concept-sp@2x.webp 2x'
+                width='345' height='259'
                 />
                 <img
-                  loading="lazy"
-                  src="img/sp/concept-sp.webp"
-                  srcset="
-                    /img/sp/concept-sp.webp    1x,
-                    /img/sp/concept-sp@2x.webp 2x
-                  "
-                  alt="concept"
+                src=img/sp/concept-sp.webp
+                alt='concept'
+                width='345' height='259'
                 />
-              </picture>
+                </picture>
+                <!-- /p-index-concept__img-wrapper -->
             </div>
             <!-- /.p-index-concept__flex-item02 -->
           </div>
@@ -330,27 +338,25 @@
           <h2 class="c-title">PRODUCT</h2>
           <div class="p-index-product__wrapper">
             <div class="p-index-product__flex-item01">
-              <div class="p-index-product__img-wrapper">
-                <picture>
-                  <source
-                    media="(min-width:1009px)"
-                    srcset="
-                      /img/pc/treatment-pc.webp    1x,
-                      /img/pc/treatment-pc@2x.webp 2x
-                    "
-                  />
-                  <img
-                    loading="lazy"
-                    src="img/sp/treatment-sp.webp"
-                    srcset="
-                      /img/sp/treatment-sp.webp    1x,
-                      /img/sp/treatment-sp@2x.webp 2x
-                    "
-                    alt="treatment"
-                  />
+              <picture class='p-index-product__img-wrapper'>
+                <source
+                type='image/webp'
+                media='(min-width:1009px)'
+                srcset='/img/pc/treatment-pc.webp 1x,/img/pc/treatment-pc@2x.webp 2x'
+                width='620' height='465'
+                />
+                <source
+                type='image/webp'
+                srcset='/img/sp/treatment-sp.webp 1x,/img/sp/treatment-sp@2x.webp 2x'
+                width='345' height='259'
+                />
+                <img
+                src=img/sp/treatment-sp.webp
+                alt='treatment'
+                width='345' height='259'
+                />
                 </picture>
-              </div>
-              <!-- /.p-index-product__img-wrapper -->
+                <!-- /p-index-product__img-wrapper -->
               <div class="p-index-product__content">
                 <h3 class="p-index-product__heading">
                   <p class="p-index-product__heading-text01">
@@ -387,21 +393,25 @@
             </div>
             <!-- /.p-index-product__flex-item01 -->
             <div class="p-index-product__flex-item02">
-              <div class="p-index-product__img-wrapper">
-                <picture>
-                  <source
-                    media="(min-width:1009px)"
-                    srcset="/img/pc/wax-pc.webp 1x, /img/pc/wax-pc@2x.webp 2x"
-                  />
-                  <img
-                    loading="lazy"
-                    src="img/sp/wax-sp.webp"
-                    srcset="/img/sp/wax-sp.webp 1x, /img/sp/wax-sp@2x.webp 2x"
-                    alt="wax"
-                  />
+              <picture class='p-index-product__img-wrapper'>
+                <source
+                type='image/webp'
+                media='(min-width:1009px)'
+                srcset='/img/pc/wax-pc.webp 1x,/img/pc/wax-pc@2x.webp 2x'
+                width='620' height='465'
+                />
+                <source
+                type='image/webp'
+                srcset='/img/sp/wax-sp.webp 1x,/img/sp/wax-sp@2x.webp 2x'
+                width='345' height='259'
+                />
+                <img
+                src=img/sp/wax-sp.webp
+                alt='wax'
+                width='345' height='259'
+                />
                 </picture>
-              </div>
-              <!-- /.p-index-product__img-wrapper -->
+                <!-- /p-index-product__img-wrapper -->
               <div class="p-index-product__content">
                 <h3 class="p-index-product__heading">
                   <p class="p-index-product__heading-text01">
@@ -521,27 +531,25 @@
                   </tr>
                 </table>
                 <!-- /.p-index-access__table -->
-                <div class="p-index-access__img-wrapper">
-                  <picture>
+                  <picture class='p-index-access__img-wrapper'>
                     <source
-                      media="(min-width:1009px)"
-                      srcset="
-                        /img/pc/barber-pc.webp    1x,
-                        /img/pc/barber-pc@2x.webp 2x
-                      "
+                    type='image/webp'
+                    media='(min-width:1009px)'
+                    srcset='/img/pc/barber-pc.webp 1x,/img/pc/barber-pc@2x.webp 2x'
+                    width='400' height='225'
+                    />
+                    <source
+                    type='image/webp'
+                    srcset='/img/sp/barber-sp.webp 1x,/img/sp/barber-sp@2x.webp 2x'
+                    width='345' height='194'
                     />
                     <img
-                      loading="lazy"
-                      src="img/sp/barber-sp.webp"
-                      srcset="
-                        /img/sp/barber-sp.webp    1x,
-                        /img/sp/barber-sp@2x.webp 2x
-                      "
-                      alt="barber"
+                    src=img/sp/barber-sp.webp
+                    alt='barber'
+                    width='345' height='194'
                     />
-                  </picture>
-                </div>
-                <!-- /.p-index-access__img-wrapper -->
+                    </picture>
+                    <!-- /p-index-access__img-wrapper -->
               </div>
               <!-- /.p-index-access__content -->
             </div>
@@ -560,7 +568,6 @@
       <!-- /.l-footer__site-title -->
     </footer>
     <!-- l-footer -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>

@@ -325,7 +325,7 @@ body.fixed {
   background-size: 100px; /* ノイズ画像の粗さを調節 */
   opacity: 0.3;
 }
-.p-index-fv__img-wrapper {
+.p-index-fv__content-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -333,7 +333,7 @@ body.fixed {
   justify-content: center;
   gap: 1ch;
 }
-.p-index-fv__img-wrapper svg {
+.p-index-fv__content-wrapper svg {
   position: absolute;
   top: 37px;
   width: 100%;
@@ -392,10 +392,10 @@ body.fixed {
   .p-index-fv__wrapper::before {
     height: 800px;
   }
-  .p-index-fv__img-wrapper img {
+  .p-index-fv__content-wrapper img {
     width: 100%;
   }
-  .p-index-fv__img-wrapper svg {
+  .p-index-fv__content-wrapper svg {
     position: absolute;
     top: 15px;
   }
