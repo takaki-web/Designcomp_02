@@ -159,7 +159,7 @@ body.fixed {
   background-size: 100px; /* ノイズ画像の粗さを調節 */
   opacity: 0.3;
 }
-.l-header__burger-lists {
+.l-header__burger-menu-lists {
   margin: 0 auto;
   padding: 0;
   width: 100%;
